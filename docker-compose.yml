@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  nuxt:
+    build: .docker
+    volumes:
+      - ./:/app/src
+    ports:
+      - "${NUXT_PORT}:3000"
+    env_file:
+      - .env
