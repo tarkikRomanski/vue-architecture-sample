@@ -1,5 +1,3 @@
-# nuxt-web3
-
 > My first-rate Nuxt.js project
 
 ## Build Setup

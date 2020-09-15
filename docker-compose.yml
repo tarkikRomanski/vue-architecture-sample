@@ -6,6 +6,6 @@ services:
     volumes:
       - ./:/app/src
     ports:
-      - "${NUXT_PORT}:3000"
+      - "${NUXT_PORT}:${NUXT_PORT}"
     env_file:
       - .env
