@@ -1,25 +1,18 @@
 <template>
   <section class="container">
-    <center :style="{marginTop: '5rem'}">
-      Address:
-      <br>
-      {{ coinbase }}
-    </center>
+    <book-list-component />
   </section>
 </template>
 
 <script lang="ts">
   import { Component, Vue } from 'vue-property-decorator'
-  import Logo from '~/components/Logo.vue'
+  import BookListComponent from '~/modules/book/component/book-list.vue'
 
   @Component({
     components: {
-      Logo,
+      BookListComponent
     },
   })
   export default class IndexPage extends Vue {
-    get coinbase(): string {
-      return 'coinbase'
-    }
   }
 </script>
